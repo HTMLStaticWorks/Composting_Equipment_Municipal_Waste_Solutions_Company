@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+    <rect width="512" height="512" rx="120" fill="#15803D"/>
+    <!-- Eco Leaf & Recycling Cycle -->
+    <path d="M256 96C167.6 96 96 167.6 96 256C96 344.4 167.6 416 256 416C308 416 354.2 391.2 384 352" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+    <path d="M384 160C354.2 120.8 308 96 256 96" stroke="#4ADE80" stroke-width="28" stroke-linecap="round"/>
+    <!-- Recycling arrow head -->
+    <path d="M384 120L384 176L328 176" stroke="#4ADE80" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M128 336L128 280L184 280" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Center Leaf Icon -->
+    <path d="M256 180C210 210 200 270 230 315C255 352 300 355 315 320C330 280 300 210 256 180Z" fill="#FACC15"/>
+    <path d="M256 180C260 230 270 280 315 320" stroke="#15803D" stroke-width="12" stroke-linecap="round"/>
+</svg>

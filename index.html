@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composting Equipment & Municipal Waste Solutions Company | EcoCycle</title>
+  <meta name="description"
+    content="Practical, sustainability-focused composting systems, bio-drum rotary composters, in-vessel food waste digesters, and municipal organic waste solutions.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- CountUp.js for stats -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+
+<body>
+
+        <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo" height="40" width="40" class="rounded">
+        <span>Eco<span class="text-primary-custom">Cycle</span></span>
+      </a>
+
+      <!-- Mobile toggles placed carefully before hamburger -->
+      <div class="d-flex align-items-center mobile-menu-btn gap-2">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <i data-lucide="menu" style="pointer-events: none;"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse desktop-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Products by Scale</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-icon" id="dir-toggle" aria-label="Toggle RTL/LTR"><i
+              data-lucide="arrow-left-right"></i></button>
+          <button class="action-icon" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon"><i data-lucide="moon"></i></span>
+          </button>
+          <a href="quote.html" class="btn-primary-custom ms-2">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About Us</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="categories.html">Products by Scale</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Case Studies</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
+        <!-- Mobile Actions & Toggles -->
+        <li class="nav-item px-3 py-2 border-top mt-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
+            </button>
+            <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
+              <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+          </div>
+        </li>
+        
+        <!-- Mobile CTA -->
+        <li class="nav-item px-3 py-3 mt-2 text-center">
+          <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Request Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="position-relative bg-dark text-white blueprint-bg overflow-hidden pt-5 pb-5 pt-lg-0 pb-lg-0"
+    style="min-height: 100vh; display: flex; align-items: center;">
+    <div class="container position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 hero-content text-center text-lg-start">
+          <span
+            class="badge bg-success rounded-pill px-3 py-2 mb-3 fw-medium text-uppercase letter-spacing-1 text-white">Sustainable Waste Management</span>
+          <h1 class="display-4 fw-medium mb-4 text-white lh-sm">Turn Organic Waste into Value.<br><span
+              class="text-primary-custom">Composting Systems & Municipal Solutions.</span></h1>
+          <p class="lead mb-5 text-secondary-subtle">High-capacity bio-drum rotary composters, rapid in-vessel food waste digesters, and complete municipal organic waste treatment systems engineered for sustainability.</p>
+
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mobile-stack-btns">
+            <a href="categories.html" class="btn-primary-custom btn-lg hero-btn">Explore Systems <i
+                data-lucide="arrow-right"></i></a>
+            <a href="quote.html" class="btn-outline-custom border-white text-white btn-lg hero-btn">Request Consultation</a>
+          </div>
+
+          <div
+            class="d-flex gap-4 mt-5 pt-3 border-top border-secondary align-items-center justify-content-center justify-content-lg-start">
+            <div class="d-flex align-items-center gap-2">
+              <i data-lucide="check-circle-2" class="text-primary-custom"></i>
+              <span class="small">Zero Odor Technology</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i data-lucide="leaf" class="text-primary-custom"></i>
+              <span class="small">85%+ Landfill Diversion</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative hero-visual">
+          <div class="position-relative" style="height: 500px; perspective: 1000px;">
+            <img src="assets/images/compost_hero.png" alt="Industrial Composting System"
+              class="img-fluid rounded-4 shadow-lg w-100 h-100 object-fit-cover">
+
+            <!-- Floating cards (Desktop) -->
+            <div class="d-none d-lg-block">
+              <div class="position-absolute bg-white text-dark p-3 rounded shadow-lg"
+                style="top: 10%; right: -5%; transform: translateZ(50px);">
+                <div class="d-flex align-items-center gap-2">
+                  <i data-lucide="recycle" class="text-primary-custom"></i>
+                  <span class="fw-medium">24h Rapid Digestion</span>
+                </div>
+              </div>
+
+              <div class="position-absolute bg-dark text-white p-3 rounded shadow-lg border border-secondary"
+                style="bottom: 15%; left: -10%; transform: translateZ(80px);">
+                <div class="d-flex align-items-center gap-2">
+                  <i data-lucide="shield-check" class="text-success"></i>
+                  <span class="fw-medium">ISO 14001 Certified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Cards (Below Image) -->
+          <div class="d-flex d-lg-none gap-3 mt-4 flex-column flex-sm-row justify-content-center">
+            <div class="bg-white text-dark p-3 rounded shadow border flex-fill">
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <i data-lucide="recycle" class="text-primary-custom"></i>
+                <span class="fw-medium">24h Rapid Digestion</span>
+              </div>
+            </div>
+            <div class="bg-dark text-white p-3 rounded shadow border border-secondary flex-fill">
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <i data-lucide="shield-check" class="text-success"></i>
+                <span class="fw-medium">ISO 14001 Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Composting Equipment by Scale -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5">
+        <div>
+          <h2 class="display-5 fw-medium mb-2">Composting Systems by Scale</h2>
+          <p class="lead text-muted mb-0">Practical organic waste treatment solutions engineered for home, commercial, and municipal scale.</p>
+        </div>
+        <a href="categories.html" class="btn-outline-custom d-none d-lg-inline-flex">View All Systems <i
+            data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Scale 1: Residential -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="categories.html?scale=residential" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/residential_composter.png" alt="Residential Composting Systems" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0 text-white">
+                    <i data-lucide="home"></i>
+                  </div>
+                  <h4 class="mb-0 fw-medium text-dark">Residential Scale</h4>
+                </div>
+                <p class="text-muted mb-3">Smart electric countertop composters, garden tumblers, and odor-free vermicompost bins for households.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-medium text-primary-custom">Daily Waste: 2kg - 10kg</span>
+                  <i data-lucide="arrow-right"
+                    class="text-muted transition group-hover:text-primary-custom group-hover:translate-x-1"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Scale 2: Commercial -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="categories.html?scale=commercial" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/commercial_composter.png" alt="Commercial Food Waste Digesters" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0 text-white">
+                    <i data-lucide="building-2"></i>
+                  </div>
+                  <h4 class="mb-0 fw-medium text-dark">Commercial Scale</h4>
+                </div>
+                <p class="text-muted mb-3">In-vessel rapid aerobic food waste digesters for hotels, restaurants, supermarkets, and corporate dining.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-medium text-primary-custom">Daily Waste: 100kg - 2,000kg</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Scale 3: Municipal -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="categories.html?scale=municipal" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/municipal_composter.png" alt="Municipal Solid Waste Plants" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0 text-white">
+                    <i data-lucide="landmark"></i>
+                  </div>
+                  <h4 class="mb-0 fw-medium text-dark">Municipal Scale</h4>
+                </div>
+                <p class="text-muted mb-3">Automated bio-drum rotary composting plants, organic waste sorters, trommel screens, and windrow turners.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-medium text-primary-custom">Daily Waste: 5 Tons - 50+ Tons</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="text-center mt-5 d-block d-lg-none">
+        <a href="categories.html" class="btn-outline-custom w-100">View All Systems <i
+            data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation & Estimator Section -->
+  <section class="section-padding bg-dark text-white blueprint-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+          <span class="text-primary-custom fw-medium letter-spacing-1 text-uppercase mb-2 d-block">Turnkey Waste Solutions</span>
+          <h2 class="display-5 fw-medium mb-4 text-white">Custom Engineering for Cities & Enterprises</h2>
+          <p class="lead text-secondary-subtle mb-4">Partner with our environmental engineering team to design, install, and operate zero-landfill organic waste systems tailored to your local volume and climate.</p>
+          <ul class="list-unstyled mb-5">
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check-circle" class="text-success"></i> <span>Up to 90% landfill tipping fee reduction</span></li>
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check-circle" class="text-success"></i>
+              <span>Turnkey installation & biofilter odor control</span></li>
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check-circle" class="text-success"></i>
+              <span>High-grade organic fertilizer output generation</span></li>
+          </ul>
+          <div class="mobile-stack-btns d-flex justify-content-center justify-content-lg-start">
+            <a href="quote.html" class="btn-primary-custom btn-lg">Request Consultation Enquiry</a>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <!-- Waste Calculator Tool -->
+          <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg border-top border-4 border-success">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="bg-primary-custom p-2 rounded text-white">
+                <i data-lucide="calculator"></i>
+              </div>
+              <h3 class="mb-0 fw-medium">Compost Yield Calculator</h3>
+            </div>
+
+            <form id="estimator-form">
+              <div class="mb-3">
+                <label class="form-label fw-medium">Facility Scale</label>
+                <select class="form-select form-control-custom" id="est-scale">
+                  <option value="commercial">Commercial (Hotel / Restaurant / Market)</option>
+                  <option value="municipal">Municipal / Urban Waste Plant</option>
+                  <option value="residential">Residential / Community Housing</option>
+                </select>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                  <label class="form-label fw-medium">Organic Waste (kg/day)</label>
+                  <input type="number" class="form-control form-control-custom" id="est-waste" placeholder="e.g. 500" value="500">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label fw-medium">Target Conversion (h)</label>
+                  <input type="number" class="form-control form-control-custom" id="est-hours" placeholder="24" value="24">
+                </div>
+              </div>
+              <div id="est-result" class="p-3 bg-light rounded mb-4 text-center">
+                <div class="small text-muted mb-1">Estimated Monthly Organic Fertilizer Output:</div>
+                <div class="fs-4 fw-bold text-success">~ 3,000 kg / month</div>
+                <div class="small text-muted mt-1">Landfill CO2 Equivalent Saved: ~1.2 Tons/mo</div>
+              </div>
+
+              <div class="d-grid gap-2 mobile-stack-btns">
+                <a href="quote.html" class="btn-primary-custom w-100 justify-content-center text-white">Book Technical Consultation</a>
+              </div>
+              <p class="small text-muted mt-3 text-center mb-0">* Calculations are based on average food waste moisture content of 70%.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Composting Systems -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-medium mb-2">Featured Systems</h2>
+        <p class="lead text-muted">High-performance composting and waste processing machinery.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Product 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image position-relative" style="height: 220px;">
+              <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Municipal Grade</span>
+              <img src="assets/images/municipal_composter.png" class="w-100 h-100 object-fit-cover"
+                alt="Bio-Drum Rotary Composter">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">MODEL: BD-5000</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-medium mb-1">Bio-Drum Continuous Rotary Composter</h5>
+              <p class="text-muted small mb-3">Municipal Scale | 5 Tons/Day Capacity</p>
+
+              <div class="mb-3">
+                <div class="fs-6 fw-medium text-dark">Automated Aerobic Thermophilic Digestion</div>
+                <div class="text-success small fw-medium"><i data-lucide="check" style="width:14px;"></i> Built-in Heavy-Duty Biofilter</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <a href="quote.html?system=bd-5000" class="btn-primary-custom w-100 justify-content-center">Request Specs & Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image position-relative" style="height: 220px;">
+              <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Commercial Choice</span>
+              <img src="assets/images/commercial_composter.png" class="w-100 h-100 object-fit-cover"
+                alt="In-Vessel Rapid Digester">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">MODEL: IVD-500</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-medium mb-1">In-Vessel Rapid Food Waste Digester</h5>
+              <p class="text-muted small mb-3">Commercial Scale | 500kg/Day Batch</p>
+
+              <div class="mb-3">
+                <div class="fs-6 fw-medium text-dark">24-Hour Complete Digestion Cycle</div>
+                <div class="text-success small fw-medium"><i data-lucide="check" style="width:14px;"></i> PLC Touchscreen & Remote Telemetry</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <a href="quote.html?system=ivd-500" class="btn-primary-custom w-100 justify-content-center">Request Specs & Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image position-relative" style="height: 220px;">
+              <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Home & Office</span>
+              <img src="assets/images/residential_composter.png" class="w-100 h-100 object-fit-cover"
+                alt="Smart Electric Kitchen Composter">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">MODEL: ECO-HOME-PRO</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-medium mb-1">Smart Kitchen Countertop Composter</h5>
+              <p class="text-muted small mb-3">Residential Scale | 3.5L Batch Capacity</p>
+
+              <div class="mb-3">
+                <div class="fs-6 fw-medium text-dark">Silent Grinding & Dehydration</div>
+                <div class="text-success small fw-medium"><i data-lucide="check" style="width:14px;"></i> Carbon-Filtered Odorless Operation</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <a href="quote.html?system=eco-home" class="btn-primary-custom w-100 justify-content-center">Order / Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-medium mb-2">Why Choose EcoCompost</h2>
+        <p class="lead text-muted">Engineering excellence in solid waste management and organic recycling.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 bg-white text-center h-100 d-flex flex-column align-items-center">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mb-3">
+              <i data-lucide="shield-check" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h5 class="fw-medium">ISO Certified Systems</h5>
+            <p class="text-muted small mb-0">Built to strict environmental standards with heavy stainless steel construction and biofilters.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 bg-white text-center h-100 d-flex flex-column align-items-center">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mb-3">
+              <i data-lucide="zap" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h5 class="fw-medium">24-Hour Digestion</h5>
+            <p class="text-muted small mb-0">Accelerated aerobic microbial action reduces organic waste volume by up to 90% in hours.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 bg-white text-center h-100 d-flex flex-column align-items-center">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mb-3">
+              <i data-lucide="wind" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h5 class="fw-medium">100% Odor Control</h5>
+            <p class="text-muted small mb-0">Negative pressure ventilation combined with multi-stage bio-filtration guarantees zero odor.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 bg-white text-center h-100 d-flex flex-column align-items-center">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mb-3">
+              <i data-lucide="wrench" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h5 class="fw-medium">Turnkey Operations</h5>
+            <p class="text-muted small mb-0">End-to-end design, installation, staff training, and preventive maintenance support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-medium mb-2">Municipal & Commercial Case Studies</h2>
+        <p class="lead text-muted">Proven impact across city landfills, hotels, and organic agriculture.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="premium-card overflow-hidden h-100 d-flex flex-column">
+            <div style="height: 250px;">
+              <img src="assets/images/case_study_1.png" class="w-100 h-100 object-fit-cover" alt="Municipal Waste Reduction">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success align-self-start mb-2">Municipal Project</span>
+              <h4 class="fw-medium mb-2">Green Metro City: 50 Tons/Day Waste Diversion</h4>
+              <p class="text-muted small mb-4">Implementation of twin continuous bio-drum rotary composters diverted over 18,000 tons of wet organic waste annually from city landfills, producing nutrient-rich compost for urban parks.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-medium">Read Full Case Study <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="premium-card overflow-hidden h-100 d-flex flex-column">
+            <div style="height: 250px;">
+              <img src="assets/images/case_study_2.png" class="w-100 h-100 object-fit-cover" alt="Commercial Food Waste Digester">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success align-self-start mb-2">Commercial Hospitality</span>
+              <h4 class="fw-medium mb-2">Eco-Resort Chain: Zero Food Waste Initiative</h4>
+              <p class="text-muted small mb-4">Installation of 500kg/day in-vessel rapid digesters across 5 resorts eliminated food transport costs and generated 100% organic fertilizer used directly in hotel gardens.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-medium">Read Full Case Study <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-medium mb-2">Our Consultation Process</h2>
+        <p class="lead text-muted">From initial waste audit to operational zero-waste facility.</p>
+      </div>
+      <div class="row g-4 text-center position-relative">
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">1</div>
+          <h6 class="fw-medium">Waste Audit</h6>
+          <p class="small text-muted">Volume & composition analysis</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">2</div>
+          <h6 class="fw-medium">System Sizing</h6>
+          <p class="small text-muted">Custom equipment selection</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">3</div>
+          <h6 class="fw-medium">RFP Proposal</h6>
+          <p class="small text-muted">Detailed technical quote</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">4</div>
+          <h6 class="fw-medium">Installation</h6>
+          <p class="small text-muted">Turnkey engineering setup</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">5</div>
+          <h6 class="fw-medium">Staff Training</h6>
+          <p class="small text-muted">Safety & operation training</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="bg-primary-custom text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center fs-4" style="width: 60px; height: 60px; font-weight: bold;">6</div>
+          <h6 class="fw-medium">Zero Waste</h6>
+          <p class="small text-muted">Continuous eco operation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="display-6 fw-medium mb-5 text-center">What Municipalities & Clients Say</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"The bio-drum rotary composter installed in our city waste center handled 10 tons of organic waste daily without any smell complaints from surrounding neighborhoods."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <div class="bg-primary-custom text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">RM</div>
+                  <div>
+                    <h6 class="fw-medium mb-0">Robert M.</h6>
+                    <span class="small text-muted">Director of Municipal Sanitation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"Our commercial kitchen composts 400kg of food waste every day. The ROI on eliminated waste transport fees paid for the unit in under 18 months."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <div class="bg-primary-custom text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">EL</div>
+                  <div>
+                    <h6 class="fw-medium mb-0">Elena L.</h6>
+                    <span class="small text-muted">Sustainability Manager, Resort Chain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <style>
+    .adaptive-footer { background-color: var(--bg-primary) !important; }
+    .adaptive-text { color: var(--text-primary) !important; }
+    .adaptive-link { color: var(--text-secondary) !important; transition: color 0.2s; }
+    .adaptive-link:hover { color: var(--accent-primary) !important; }
+  </style>
+  <footer class="adaptive-footer border-top pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3 fs-4 fw-medium adaptive-text">
+            <img src="assets/images/logo.svg" alt="Logo" height="40" width="40" class="rounded">
+            <span>Eco<span class="text-primary-custom">Cycle</span></span>
+          </a>
+          <p class="mb-4 adaptive-text">Leading provider of sustainable composting equipment and municipal organic waste solutions. Transforming organic waste into rich bio-fertilizer worldwide.</p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Navigation</h5>
+          <a href="index.html" class="text-decoration-none d-block mb-2 adaptive-link">Home</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Products by Scale</a>
+          <a href="services.html" class="text-decoration-none d-block mb-2 adaptive-link">Case Studies</a>
+          <a href="about.html" class="text-decoration-none d-block mb-2 adaptive-link">About Us</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Systems</h5>
+          <a href="categories.html?scale=residential" class="text-decoration-none d-block mb-2 adaptive-link">Residential Units</a>
+          <a href="categories.html?scale=commercial" class="text-decoration-none d-block mb-2 adaptive-link">Commercial Digesters</a>
+          <a href="categories.html?scale=municipal" class="text-decoration-none d-block mb-2 adaptive-link">Municipal Plants</a>
+          <a href="quote.html" class="text-decoration-none d-block mb-2 adaptive-link">Custom Systems</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Resources</h5>
+          <a href="brands.html" class="text-decoration-none d-block mb-2 adaptive-link">Tech Partners</a>
+          <a href="pricing.html" class="text-decoration-none d-block mb-2 adaptive-link">System Packages</a>
+          <a href="quote.html" class="text-decoration-none d-block mb-2 adaptive-link">RFP Request</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Consultation Form</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Contact</h5>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Consultation</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Support Desk</a>
+          <p class="small text-muted mt-2 mb-0">info@ecocompost-solutions.com</p>
+        </div>
+      </div>
+      <div class="border-top pt-4 text-center" style="border-color: var(--border-color) !important;">
+        <p class="mb-0 small adaptive-text">&copy; 2026 Composting Equipment &amp; Municipal Waste Solutions Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initializations -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".hero-content", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
+        ease: "power3.out"
+      });
+
+      gsap.from(".hero-visual", {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.4,
+        ease: "power3.out"
+      });
+
+      gsap.from(".premium-card", {
+        scrollTrigger: {
+          trigger: ".premium-card",
+          start: "top 80%"
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out"
+      });
+    });
+  </script>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+</body>
+
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Packages & ROI Calculator | Composting Equipment Solutions</title>
+  <meta name="description" content="Explore system packages and ROI estimators for residential, commercial, and municipal composting equipment.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+
+<body>
+
+        <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo" height="40" width="40" class="rounded">
+        <span>Eco<span class="text-primary-custom">Cycle</span></span>
+      </a>
+
+      <!-- Mobile toggles placed carefully before hamburger -->
+      <div class="d-flex align-items-center mobile-menu-btn gap-2">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <i data-lucide="menu" style="pointer-events: none;"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse desktop-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Products by Scale</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-icon" id="dir-toggle" aria-label="Toggle RTL/LTR"><i
+              data-lucide="arrow-left-right"></i></button>
+          <button class="action-icon" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon"><i data-lucide="moon"></i></span>
+          </button>
+          <a href="quote.html" class="btn-primary-custom ms-2">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About Us</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="categories.html">Products by Scale</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Case Studies</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
+        <!-- Mobile Actions & Toggles -->
+        <li class="nav-item px-3 py-2 border-top mt-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
+            </button>
+            <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
+              <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+          </div>
+        </li>
+        
+        <!-- Mobile CTA -->
+        <li class="nav-item px-3 py-3 mt-2 text-center">
+          <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Request Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <section class="section-padding bg-dark text-white blueprint-bg position-relative overflow-hidden text-center">
+    <div class="container text-center position-relative z-1">
+      <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Solution Tiering</span>
+      <h1 class="display-4 fw-medium mb-4 text-white">System Packages &amp; <br><span class="text-primary-custom">Return on Investment</span></h1>
+      <p class="lead max-w-2xl mx-auto text-secondary-subtle">Flexible equipment tiering designed for small hospitality facilities, commercial food hubs, and full municipal plant installations.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Tier 1 -->
+        <div class="col-lg-4">
+          <div class="premium-card p-4 p-md-5 bg-white h-100 border-0 shadow-sm d-flex flex-column">
+            <span class="badge bg-secondary text-dark align-self-start mb-3">Residential / Office</span>
+            <h3 class="fw-medium mb-2">Compact Unit</h3>
+            <p class="text-muted small mb-4">Ideal for household, apartment complex, or small cafeteria organic waste.</p>
+            <div class="mb-4">
+              <span class="fs-2 fw-bold text-success">Custom Quote</span>
+              <span class="text-muted small"> / Unit</span>
+            </div>
+            <ul class="list-unstyled mb-4 text-muted small">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Up to 10kg/day capacity</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Carbon-filter odor control</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> 1-Year manufacturer warranty</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> Plug & Play operation</li>
+            </ul>
+            <a href="quote.html?package=compact" class="btn-outline-custom w-100 mt-auto">Inquire Compact Unit</a>
+          </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="col-lg-4">
+          <div class="premium-card p-4 p-md-5 bg-white h-100 border-2 border-success shadow-lg d-flex flex-column position-relative">
+            <span class="badge bg-success text-white position-absolute top-0 end-0 m-3">Most Popular</span>
+            <span class="badge bg-success text-white align-self-start mb-3">Commercial</span>
+            <h3 class="fw-medium mb-2">In-Vessel Digester</h3>
+            <p class="text-muted small mb-4">Engineered for hotels, supermarkets, dining halls, and commercial kitchens.</p>
+            <div class="mb-4">
+              <span class="fs-2 fw-bold text-success">Turnkey Package</span>
+            </div>
+            <ul class="list-unstyled mb-4 text-muted small">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> 100kg to 2,000kg/day scale</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> 24-Hour rapid thermophilic digestion</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Touchscreen PLC & remote IoT</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Integrated biofilter unit</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> On-site installation & training</li>
+            </ul>
+            <a href="quote.html?package=commercial" class="btn-primary-custom w-100 justify-content-center mt-auto">Request Commercial RFP</a>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="col-lg-4">
+          <div class="premium-card p-4 p-md-5 bg-white h-100 border-0 shadow-sm d-flex flex-column">
+            <span class="badge bg-dark text-white align-self-start mb-3">Municipal</span>
+            <h3 class="fw-medium mb-2">Bio-Drum Plant</h3>
+            <p class="text-muted small mb-4">Complete municipal organic waste processing facility for city councils.</p>
+            <div class="mb-4">
+              <span class="fs-2 fw-bold text-success">Custom RFP</span>
+            </div>
+            <ul class="list-unstyled mb-4 text-muted small">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> 5 to 50+ Tons/day continuous drum</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Automated MSW sorting conveyor</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Industrial biofilter scrubber</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Full engineering feasibility report</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> 5-Year heavy structure warranty</li>
+            </ul>
+            <a href="quote.html?package=municipal" class="btn-outline-custom w-100 mt-auto">Submit Municipal RFP</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: Interactive ROI & Savings Calculator -->
+  <section class="section-padding blueprint-bg bg-dark text-white position-relative overflow-hidden" id="roi-calculator">
+    <div class="container position-relative z-1">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Interactive Financial Tool</span>
+        <h2 class="display-5 fw-medium mb-3 text-white">Organic Waste ROI & Tipping Fee Calculator</h2>
+        <p class="lead text-secondary-subtle">See how quickly an on-site bio-digester or municipal composter pays for itself by eliminating landfill hauling fees.</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Input Controls -->
+        <div class="col-lg-5">
+          <div class="premium-card p-4 p-md-5 bg-white text-dark border-0 shadow-lg rounded-4">
+            <h4 class="fw-medium mb-4 text-dark"><i data-lucide="calculator" class="text-success me-2"></i> Facility Inputs</h4>
+            
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label for="wasteSlider" class="form-label mb-0 fw-medium">Daily Organic Waste (kg/day):</label>
+                <span id="wasteValDisplay" class="fw-bold text-success fs-5">500 kg</span>
+              </div>
+              <input type="range" class="form-range" id="wasteSlider" min="50" max="5000" step="50" value="500">
+              <div class="d-flex justify-content-between text-muted small">
+                <span>50 kg (Small Kitchen)</span>
+                <span>5,000 kg (Municipal)</span>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="tippingFeeSelect" class="form-label fw-medium mb-2">Landfill Hauling / Tipping Fee ($ / Ton):</label>
+              <select class="form-select border" id="tippingFeeSelect">
+                <option value="60">$60 / Ton (Low Regional Rate)</option>
+                <option value="90" selected>$90 / Ton (Average Metro Rate)</option>
+                <option value="120">$120 / Ton (High Coastal Rate)</option>
+                <option value="160">$160 / Ton (Strict Mandate Zone)</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label for="wasteTypeSelect" class="form-label fw-medium mb-2">Primary Waste Stream:</label>
+              <select class="form-select border" id="wasteTypeSelect">
+                <option value="food">Commercial Kitchen & Food Scraps</option>
+                <option value="municipal">Mixed Municipal Solid Organic Waste</option>
+                <option value="green">Yard, Agriculture & Green Sludge</option>
+              </select>
+            </div>
+
+            <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Get Custom Financial Audit</a>
+          </div>
+        </div>
+
+        <!-- Calculated Output Cards -->
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div class="p-2 bg-success-subtle text-success rounded-circle">
+                    <i data-lucide="piggy-bank" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <span class="text-muted small fw-medium">Annual Hauling Savings</span>
+                </div>
+                <h3 class="display-6 fw-bold text-success mb-1" id="resAnnualSavings">$16,425</h3>
+                <p class="text-muted small mb-0">Direct cash retained from eliminated landfill tipping fees.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div class="p-2 bg-success-subtle text-success rounded-circle">
+                    <i data-lucide="sprout" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <span class="text-muted small fw-medium">Bio-Fertilizer Value</span>
+                </div>
+                <h3 class="display-6 fw-bold text-success mb-1" id="resFertilizerVal">$4,106</h3>
+                <p class="text-muted small mb-0">Estimated value of generated nutrient soil amendment.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div class="p-2 bg-success-subtle text-success rounded-circle">
+                    <i data-lucide="leaf" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <span class="text-muted small fw-medium">CO2e Methane Avoided</span>
+                </div>
+                <h3 class="display-6 fw-bold text-success mb-1" id="resCo2Avoided">219 Tons</h3>
+                <p class="text-muted small mb-0">Equivalent greenhouse gas reduction annually.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div class="p-2 bg-success-subtle text-success rounded-circle">
+                    <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <span class="text-muted small fw-medium">Est. Equipment Payback</span>
+                </div>
+                <h3 class="display-6 fw-bold text-success mb-1" id="resPayback">26 Months</h3>
+                <p class="text-muted small mb-0">Typical timeline to full equipment capex recovery.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Benefit Banner -->
+          <div class="mt-4 p-4 rounded-4 bg-primary-custom text-dark d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 shadow">
+            <div>
+              <span class="badge bg-dark text-white px-2 py-1 mb-1">Combined Value</span>
+              <h4 class="fw-bold mb-0 text-dark">Total Net Benefit: <span id="resTotalBenefit">$20,531</span> / Year</h4>
+            </div>
+            <a href="quote.html?roi=calculated" class="btn btn-dark px-4 py-2 text-nowrap rounded-3 fw-medium">Lock In Savings Proposal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Equipment Financing & Procurement Models -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Capital Flexibility</span>
+        <h2 class="display-5 fw-medium mb-3">Procurement & Financing Options</h2>
+        <p class="lead text-muted">We structure capital purchase, municipal bond financing, and equipment-as-a-service models tailored to your budget.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Model 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card p-4 p-lg-5 bg-white h-100 border rounded-4 shadow-sm text-center d-flex flex-column hover-glow transition">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+              <i data-lucide="dollar-sign" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4 class="fw-medium mb-2">Direct CAPEX Purchase</h4>
+            <span class="badge bg-light text-success border border-success-subtle px-3 py-1 mx-auto mb-3">100% Asset Ownership</span>
+            <p class="text-muted small mb-4 flex-grow-1">Ideal for enterprises looking to leverage tax depreciation, local sustainability grants, and full asset ownership from Day 1.</p>
+            <ul class="list-unstyled text-start small text-muted mb-4">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Section 179 tax deduction eligible</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Full factory hardware warranty</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> One-time capital expenditure</li>
+            </ul>
+            <a href="quote.html?finance=capex" class="btn-outline-custom w-100 mt-auto">Inquire CAPEX Options</a>
+          </div>
+        </div>
+
+        <!-- Model 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card p-4 p-lg-5 bg-white h-100 border-2 border-success rounded-4 shadow-lg text-center d-flex flex-column hover-glow transition">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+              <i data-lucide="landmark" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4 class="fw-medium mb-2">Municipal Bond & Lease</h4>
+            <span class="badge bg-success text-white px-3 py-1 mx-auto mb-3">Tax-Exempt Municipal</span>
+            <p class="text-muted small mb-4 flex-grow-1">Tailored for city councils and regional authorities. Pay through operational hauling savings without upfront capital votes.</p>
+            <ul class="list-unstyled text-start small text-muted mb-4">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Tax-exempt municipal lease terms</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> 3 to 10 year flexible amortization</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> Budget neutral from waste savings</li>
+            </ul>
+            <a href="quote.html?finance=municipal" class="btn-primary-custom w-100 justify-content-center mt-auto">Municipal Financing Guide</a>
+          </div>
+        </div>
+
+        <!-- Model 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="premium-card p-4 p-lg-5 bg-white h-100 border rounded-4 shadow-sm text-center d-flex flex-column hover-glow transition">
+            <div class="bg-primary-custom p-3 rounded-circle text-white mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+              <i data-lucide="refresh-cw" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4 class="fw-medium mb-2">Equipment-as-a-Service</h4>
+            <span class="badge bg-light text-success border border-success-subtle px-3 py-1 mx-auto mb-3">Zero Down OPEX</span>
+            <p class="text-muted small mb-4 flex-grow-1">All-inclusive monthly subscription covering equipment delivery, preventative maintenance, microbial inoculants, and IoT telemetry.</p>
+            <ul class="list-unstyled text-start small text-muted mb-4">
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Zero upfront capital outlay</li>
+              <li class="mb-2"><i data-lucide="check" class="text-success me-2"></i> Includes all spare parts & microbes</li>
+              <li><i data-lucide="check" class="text-success me-2"></i> Upgrade technology every 3 years</li>
+            </ul>
+            <a href="quote.html?finance=eaas" class="btn-outline-custom w-100 mt-auto">Explore Subscription</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Detailed SLA & Specification Matrix -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Feature Matrix</span>
+        <h2 class="display-5 fw-medium mb-3">Package Specification Comparison</h2>
+        <p class="lead text-muted">Comprehensive breakdown of technical capabilities, warranty coverage, and included services.</p>
+      </div>
+
+      <div class="table-responsive rounded-4 shadow-sm border p-3" style="background-color: var(--bg-surface);">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th scope="col" class="py-3 ps-4" style="width: 30%;">Technical Capability / SLA</th>
+              <th scope="col" class="text-center py-3" style="width: 23%;">Compact Unit</th>
+              <th scope="col" class="text-center py-3 bg-success-subtle text-success" style="width: 23%;">In-Vessel Digester</th>
+              <th scope="col" class="text-center py-3" style="width: 24%;">Bio-Drum Plant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="scale" class="text-success me-2"></i> Daily Waste Capacity</td>
+              <td class="text-center">2 kg – 10 kg / day</td>
+              <td class="text-center fw-bold text-success">100 kg – 2,000 kg / day</td>
+              <td class="text-center">5 – 50+ Tons / day</td>
+            </tr>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="zap" class="text-success me-2"></i> Digestion Cycle Time</td>
+              <td class="text-center">12 – 18 Hours</td>
+              <td class="text-center fw-bold text-success">24 Hours Continuous</td>
+              <td class="text-center">24 – 48 Hours Continuous</td>
+            </tr>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="wind" class="text-success me-2"></i> Odor Control Technology</td>
+              <td class="text-center">Activated Carbon Filter</td>
+              <td class="text-center fw-bold text-success">Multi-Stage Biofilter Scrubber</td>
+              <td class="text-center">Industrial Negative Pressure System</td>
+            </tr>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="cpu" class="text-success me-2"></i> Automation & Cloud IoT</td>
+              <td class="text-center">Basic Digital Timer</td>
+              <td class="text-center fw-bold text-success">PLC Touchscreen + IoT Cloud</td>
+              <td class="text-center">SCADA System & Remote Telemetry</td>
+            </tr>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="shield-check" class="text-success me-2"></i> Equipment Warranty</td>
+              <td class="text-center">1 Year Full</td>
+              <td class="text-center fw-bold text-success">3 Year Heavy Structure</td>
+              <td class="text-center">5 Year Structural Guarantee</td>
+            </tr>
+            <tr>
+              <td class="fw-medium ps-4"><i data-lucide="users" class="text-success me-2"></i> Operator Training & SLA</td>
+              <td class="text-center">Digital Manual</td>
+              <td class="text-center fw-bold text-success">On-site Staff Certification</td>
+              <td class="text-center">Turnkey Engineering Team Onsite</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Frequently Asked Questions (FAQ Accordion) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Got Questions?</span>
+        <h2 class="display-5 fw-medium mb-3">Frequently Asked Questions</h2>
+        <p class="lead text-muted">Everything you need to know about system procurement, installation, warranties, and ROI.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion accordion-flush rounded-4 border shadow-sm p-3 p-md-4" id="faqAccordion" style="background-color: var(--bg-surface);">
+            
+            <!-- Question 1 -->
+            <div class="accordion-item border-bottom py-2">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> What is the average return on investment (ROI) payback period?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Most commercial digesters and municipal bio-drum plants achieve complete ROI capital payback within <strong>14 to 36 months</strong>. Payback is driven by eliminated landfill hauling fees, avoided carbon/tipping surcharges, and secondary value generated from high-grade organic bio-fertilizer output.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item border-bottom py-2">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> How does the multi-stage bio-scrubber guarantee 100% zero odor?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Our systems operate under a closed-loop negative pressure design. Exhaust air passes through moisture condensation traps, activated carbon filters, and a biological wood-chip/microbial scrubber bed that neutralizes volatile organic compounds (VOCs) and ammonia before clean air is released.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item border-bottom py-2">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> What site infrastructure is required for installation?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Commercial in-vessel units require a standard 3-phase electric connection (380V/480V depending on capacity), a standard water inlet for automated washdown cycles, and a level concrete pad. Our municipal bio-drum systems include complete site layout engineering and foundation blueprints.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item border-bottom py-2">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> Do you assist city councils with municipal RFP documentation?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Yes! Our municipal engineering division assists city planning committees, waste management authorities, and consultants with feasibility studies, environmental impact reports, EPA compliance documentation, and RFP specification drafting.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item border-bottom py-2">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> What ongoing microbial inoculants and maintenance are required?
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Our thermophilic microbial starter inoculant is added periodically (typically once per month or quarter) to maintain optimal digestion speed. Under our Service SLA or EaaS package, microbial refills, preventive maintenance, sensor calibration, and software updates are automatically managed by EcoCompost technicians.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item py-2">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed fw-medium fs-5 bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <i data-lucide="help-circle" class="text-success me-3"></i> Can we test our specific organic waste stream before purchasing?
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted ps-5">
+                  Absolutely. We offer a lab-scale pilot testing service where prospective clients send samples of their organic waste (food waste, sludge, agricultural byproducts) to our R&D facility for digestion speed, moisture reduction, and bio-fertilizer quality analysis.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <style>
+    .adaptive-footer { background-color: var(--bg-primary) !important; }
+    .adaptive-text { color: var(--text-primary) !important; }
+    .adaptive-link { color: var(--text-secondary) !important; transition: color 0.2s; }
+    .adaptive-link:hover { color: var(--accent-primary) !important; }
+  </style>
+  <footer class="adaptive-footer border-top pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3 fs-4 fw-medium adaptive-text">
+            <img src="assets/images/logo.svg" alt="Logo" height="40" width="40" class="rounded">
+            <span>Eco<span class="text-primary-custom">Cycle</span></span>
+          </a>
+          <p class="mb-4 adaptive-text">Leading provider of sustainable composting equipment and municipal organic waste solutions. Transforming organic waste into rich bio-fertilizer worldwide.</p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" style="width:36px; height:36px;" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Navigation</h5>
+          <a href="index.html" class="text-decoration-none d-block mb-2 adaptive-link">Home</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Products by Scale</a>
+          <a href="services.html" class="text-decoration-none d-block mb-2 adaptive-link">Case Studies</a>
+          <a href="about.html" class="text-decoration-none d-block mb-2 adaptive-link">About Us</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Systems</h5>
+          <a href="categories.html?scale=residential" class="text-decoration-none d-block mb-2 adaptive-link">Residential Units</a>
+          <a href="categories.html?scale=commercial" class="text-decoration-none d-block mb-2 adaptive-link">Commercial Digesters</a>
+          <a href="categories.html?scale=municipal" class="text-decoration-none d-block mb-2 adaptive-link">Municipal Plants</a>
+          <a href="quote.html" class="text-decoration-none d-block mb-2 adaptive-link">Custom Systems</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Resources</h5>
+          <a href="brands.html" class="text-decoration-none d-block mb-2 adaptive-link">Tech Partners</a>
+          <a href="pricing.html" class="text-decoration-none d-block mb-2 adaptive-link">System Packages</a>
+          <a href="quote.html" class="text-decoration-none d-block mb-2 adaptive-link">RFP Request</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Consultation Form</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-medium mb-3 adaptive-text">Contact</h5>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Consultation</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Support Desk</a>
+          <p class="small text-muted mt-2 mb-0">info@ecocompost-solutions.com</p>
+        </div>
+      </div>
+      <div class="border-top pt-4 text-center" style="border-color: var(--border-color) !important;">
+        <p class="mb-0 small adaptive-text">&copy; 2026 Composting Equipment &amp; Municipal Waste Solutions Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      // GSAP Animations
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray('.premium-card').forEach((card) => {
+          gsap.from(card, {
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none reverse'
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.7,
+            ease: 'power2.out'
+          });
+        });
+      }
+
+      // ROI Calculator Logic
+      const wasteSlider = document.getElementById('wasteSlider');
+      const wasteValDisplay = document.getElementById('wasteValDisplay');
+      const tippingFeeSelect = document.getElementById('tippingFeeSelect');
+      const wasteTypeSelect = document.getElementById('wasteTypeSelect');
+
+      const resAnnualSavings = document.getElementById('resAnnualSavings');
+      const resFertilizerVal = document.getElementById('resFertilizerVal');
+      const resCo2Avoided = document.getElementById('resCo2Avoided');
+      const resPayback = document.getElementById('resPayback');
+      const resTotalBenefit = document.getElementById('resTotalBenefit');
+
+      function calculateROI() {
+        if (!wasteSlider || !tippingFeeSelect) return;
+
+        const dailyKg = parseFloat(wasteSlider.value);
+        const tippingFee = parseFloat(tippingFeeSelect.value);
+
+        wasteValDisplay.textContent = dailyKg >= 1000 ? (dailyKg / 1000).toFixed(1) + ' Tons (' + dailyKg.toLocaleString() + ' kg)' : dailyKg.toLocaleString() + ' kg';
+
+        const annualTons = (dailyKg * 365) / 1000;
+        const annualSavings = Math.round(annualTons * tippingFee);
+        const fertilizerTons = annualTons * 0.15;
+        const fertilizerVal = Math.round(fertilizerTons * 150);
+        const co2Avoided = Math.round(annualTons * 1.2);
+        const totalBenefit = annualSavings + fertilizerVal;
+
+        // Base cost estimate
+        let baseCost = 25000;
+        if (dailyKg > 200) baseCost = 55000;
+        if (dailyKg > 1000) baseCost = 180000;
+
+        const paybackMonths = Math.max(5, Math.round((baseCost / totalBenefit) * 12));
+
+        resAnnualSavings.textContent = '$' + annualSavings.toLocaleString();
+        resFertilizerVal.textContent = '$' + fertilizerVal.toLocaleString();
+        resCo2Avoided.textContent = co2Avoided.toLocaleString() + ' Tons';
+        resPayback.textContent = paybackMonths + ' Months';
+        resTotalBenefit.textContent = '$' + totalBenefit.toLocaleString();
+      }
+
+      if (wasteSlider) {
+        wasteSlider.addEventListener('input', calculateROI);
+        tippingFeeSelect.addEventListener('change', calculateROI);
+        if (wasteTypeSelect) wasteTypeSelect.addEventListener('change', calculateROI);
+        calculateROI();
+      }
+    });
+  </script>
+
+  <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+</body>
+
+</html>
