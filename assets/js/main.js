@@ -185,3 +185,41 @@ function createToastContainer() {
   document.body.appendChild(container);
   return container;
 }
+
+// Quick Filter Pills Interactive System
+document.addEventListener('DOMContentLoaded', () => {
+  const pillBtns = document.querySelectorAll('.filter-pill-btn');
+  if (pillBtns.length > 0) {
+    pillBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        pillBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filterVal = btn.getAttribute('data-filter');
+        filterProductCards(filterVal);
+      });
+    });
+  }
+});
+
+function filterProductCards(category) {
+  const cards = document.querySelectorAll('.col-md-6.col-xl-4, .product-card-item');
+  if (!cards.length) return;
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    if (category === 'all') {
+      card.style.display = '';
+    } else if (category === 'municipal' && text.includes('municipal')) {
+      card.style.display = '';
+    } else if (category === 'commercial' && text.includes('commercial')) {
+      card.style.display = '';
+    } else if (category === 'residential' && (text.includes('residential') || text.includes('countertop') || text.includes('apartment'))) {
+      card.style.display = '';
+    } else if (category === 'biodrum' && text.includes('bio-drum')) {
+      card.style.display = '';
+    } else if (category === 'invessel' && text.includes('in-vessel')) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}

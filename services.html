@@ -58,7 +58,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <h5 class="offcanvas-title fw-medium d-flex align-items-center gap-2" id="mobileMenuLabel"><img src="assets/images/logo.svg" alt="Logo" height="32" width="32" class="rounded"><span>Eco<span class="text-primary-custom">Cycle</span></span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -72,12 +72,12 @@
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
         <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
-              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
-            </button>
+          <div class="d-flex align-items-center justify-content-center gap-3">
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
           </div>
         </li>
@@ -108,25 +108,27 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <img src="assets/images/14.png" alt="Municipal Landfill Diversion" class="img-fluid rounded-4 shadow-lg w-100" style="height: 360px; object-fit: cover;">
         </div>
-        <div class="col-lg-6 ps-lg-4">
+        <div class="col-lg-6 ps-lg-4 text-center text-lg-start">
           <span class="badge bg-success mb-2">Municipal Scale</span>
           <h2 class="fw-medium mb-3">Green Metro Municipality: 50 Tons/Day Waste Diversion</h2>
           <p class="text-muted mb-4">Faced with overflowing municipal landfills and strict carbon emissions targets, Metro City Council commissioned our twin Continuous Bio-Drum Rotary Composting Systems (BD-5000 series). The plant processes wet organic municipal waste in 24-hour cycles with zero odor output.</p>
           <div class="row g-3 mb-4">
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">18,250 Tons</div>
                 <div class="small text-muted">Annual Waste Diverted</div>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">88% Reduction</div>
                 <div class="small text-muted">In Landfill Methane Emissions</div>
               </div>
             </div>
           </div>
-          <a href="quote.html?case=municipal" class="btn-primary-custom">Request Similar Municipal Proposal</a>
+          <div class="case-study-cta-container">
+            <a href="quote.html?case=municipal" class="btn-primary-custom justify-content-center">Request Similar Municipal Proposal</a>
+          </div>
         </div>
       </div>
 
@@ -135,25 +137,27 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <img src="assets/images/15.png" alt="Commercial Food Waste Digester" class="img-fluid rounded-4 shadow-lg w-100" style="height: 360px; object-fit: cover;">
         </div>
-        <div class="col-lg-6 pe-lg-4">
+        <div class="col-lg-6 pe-lg-4 text-center text-lg-start">
           <span class="badge bg-success mb-2">Commercial Scale</span>
-          <h2 class="fw-medium mb-3">Eco Resort & Hotel Chain: Zero Food Waste to Landfill</h2>
+          <h2 class="fw-medium mb-3">Eco Resort &amp; Hotel Chain: Zero Food Waste to Landfill</h2>
           <p class="text-muted mb-4">Five premier resort properties installed our In-Vessel Rapid Aerobic Food Waste Digesters (IVD-500). By processing kitchen scraps and dining waste onsite, the resorts completely eliminated food waste hauling fees and produced 30 tons of organic soil fertilizer for their gardens monthly.</p>
           <div class="row g-3 mb-4">
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">14 Months</div>
                 <div class="small text-muted">Full Equipment Payback</div>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">360 Tons</div>
                 <div class="small text-muted">Annual Bio-Fertilizer Produced</div>
               </div>
             </div>
           </div>
-          <a href="quote.html?case=commercial" class="btn-primary-custom">Request Commercial System Quote</a>
+          <div class="case-study-cta-container">
+            <a href="quote.html?case=commercial" class="btn-primary-custom justify-content-center">Request Commercial System Quote</a>
+          </div>
         </div>
       </div>
 
@@ -162,25 +166,27 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <img src="assets/images/10.png" alt="Agricultural Organic Fertilizer Production" class="img-fluid rounded-4 shadow-lg w-100" style="height: 360px; object-fit: cover;">
         </div>
-        <div class="col-lg-6 ps-lg-4">
+        <div class="col-lg-6 ps-lg-4 text-center text-lg-start">
           <span class="badge bg-success mb-2">Agricultural Scale</span>
-          <h2 class="fw-medium mb-3">Valley Organic Co-op: Biomass & Manure Processing</h2>
+          <h2 class="fw-medium mb-3">Valley Organic Co-op: Biomass &amp; Manure Processing</h2>
           <p class="text-muted mb-4">A regional agricultural cooperative integrated our heavy-duty organic shredders and windrow turners to process agricultural crop residues and animal manure, producing certified organic compost for local farmers.</p>
           <div class="row g-3 mb-4">
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">100% Organic</div>
                 <div class="small text-muted">Certified Compost Yield</div>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 bg-light rounded text-center">
+              <div class="p-3 bg-light rounded text-center h-100 d-flex flex-column justify-content-center">
                 <div class="fs-4 fw-bold text-success">12,000 m³</div>
                 <div class="small text-muted">Biomass Processed / Month</div>
               </div>
             </div>
           </div>
-          <a href="quote.html?case=agricultural" class="btn-primary-custom">Request Agricultural Quote</a>
+          <div class="case-study-cta-container">
+            <a href="quote.html?case=agricultural" class="btn-primary-custom justify-content-center">Request Agricultural Quote</a>
+          </div>
         </div>
       </div>
 
@@ -273,10 +279,10 @@
   </section>
 
   <!-- CTA Consultation Banner -->
-  <section class="section-padding bg-dark text-white text-center">
-    <div class="container">
+  <section class="section-padding bg-dark text-white blueprint-bg position-relative overflow-hidden text-center">
+    <div class="container position-relative z-1">
       <h2 class="display-6 fw-medium mb-3 text-white">Ready to Transform Your Organic Waste Management?</h2>
-      <p class="lead text-secondary-subtle max-width-700 mx-auto mb-4">Our environmental engineering specialists provide custom site assessments, capacity modeling, and turnkey installation support.</p>
+      <p class="lead text-light opacity-90 max-w-2xl mx-auto mb-4 fw-normal">Our environmental engineering specialists provide custom site assessments, capacity modeling, and turnkey installation support.</p>
       <a href="contact.html" class="btn-primary-custom btn-lg">Book Consultation Enquiry</a>
     </div>
   </section>

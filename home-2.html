@@ -61,7 +61,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <h5 class="offcanvas-title fw-medium d-flex align-items-center gap-2" id="mobileMenuLabel"><img src="assets/images/logo.svg" alt="Logo" height="32" width="32" class="rounded"><span>Eco<span class="text-primary-custom">Cycle</span></span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -75,12 +75,12 @@
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
         <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
-              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
-            </button>
+          <div class="d-flex align-items-center justify-content-center gap-3">
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
           </div>
         </li>
@@ -111,7 +111,7 @@
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start hero-cta-container">
               <a href="quote.html" class="btn-primary-custom py-3 px-4 shadow-sm fs-6 text-center justify-content-center hero-cta-btn">Submit Municipal RFP</a>
-              <a href="categories.html?scale=municipal" class="text-decoration-none hero-cta-btn" style="background:transparent; border: 2px solid rgba(255,255,255,0.45); color:#fff; padding:12px 24px; border-radius:8px; font-weight:500; transition: all 0.25s ease; display:inline-flex; align-items:center; justify-content:center; text-decoration: none !important;">Explore Municipal Scale</a>
+              <a href="categories.html?scale=municipal" class="btn-outline-custom hero-cta-btn">Explore Municipal Scale</a>
             </div>
           </div>
           <div class="col-lg-5 text-center">
@@ -174,8 +174,8 @@
     </section>
   </div>
 
-  <!-- Municipal Highlights - Touching 3 Cards Layout -->
-  <section class="touching-cards-section pt-3 pb-5 bg-light">
+  <!-- Municipal Highlights - 3 Cards Layout with Clean Spacing -->
+  <section class="touching-cards-section py-5 py-lg-6 bg-light">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-4">
@@ -206,13 +206,13 @@
         <div class="col-lg-6 reveal-img">
           <div class="position-relative">
             <img src="assets/images/18.png" alt="Continuous Bio-Drum Rotary Composter" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 420px;">
-            <div class="position-absolute bottom-0 start-0 m-3 p-3 rounded-3 d-flex align-items-center gap-3" style="background: rgba(0,0,0,0.62); backdrop-filter: blur(8px);">  
-              <div class="p-2 bg-success text-white rounded-circle">
-                <i data-lucide="check-circle-2" style="width: 24px; height: 24px;"></i>
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 rounded-3 d-flex align-items-center gap-3" style="background: rgba(15, 23, 42, 0.90); border: 1px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(12px); box-shadow: 0 8px 24px rgba(0,0,0,0.4);">  
+              <div class="p-2 text-white rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 42px; height: 42px; background-color: #16A34A !important;">
+                <i data-lucide="check-circle-2" style="width: 24px; height: 24px; color: #FFFFFF !important;"></i>
               </div>
               <div>
-                <h6 class="fw-bold mb-0 text-white">Continuous Aerobic Flow</h6>
-                <small class="text-secondary-subtle">74°C Thermophilic Pasteurization Zone</small>
+                <h6 class="fw-bold mb-0 text-white" style="color: #FFFFFF !important; font-size: 1rem;">Continuous Aerobic Flow</h6>
+                <small class="d-block" style="color: #CBD5E1 !important; font-weight: 500;">74°C Thermophilic Pasteurization Zone</small>
               </div>
             </div>
           </div>
@@ -477,7 +477,7 @@
 
       <div class="d-flex flex-wrap justify-content-center gap-3">
         <a href="quote.html?pilot=schedule" class="btn-primary-custom btn-lg">Schedule Pilot Plant Trial</a>
-        <a href="quote.html?rfp=blueprint" class="btn-outline-custom btn-lg">Download RFP Specification Blueprint</a>
+        <a href="quote.html?rfp=blueprint" class="btn-outline-custom btn-lg">Download RFP Blueprint</a>
       </div>
     </div>
   </section>

@@ -56,7 +56,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <h5 class="offcanvas-title fw-medium d-flex align-items-center gap-2" id="mobileMenuLabel"><img src="assets/images/logo.svg" alt="Logo" height="32" width="32" class="rounded"><span>Eco<span class="text-primary-custom">Cycle</span></span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -70,12 +70,12 @@
         <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="contact.html">Contact</a></li>
         <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
-              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
-            </button>
+          <div class="d-flex align-items-center justify-content-center gap-3">
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
           </div>
         </li>
@@ -146,26 +146,26 @@
           <h2 class="display-6 fw-medium mb-3">Consultation Enquiry Form</h2>
           <p class="text-muted mb-4">Planning a municipal waste facility or commercial organic waste conversion? Fill out the details below and our senior environmental engineer will respond within 24 hours.</p>
           
-          <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm border" onsubmit="event.preventDefault(); alert('Consultation Enquiry Submitted Successfully! Our engineering team will contact you shortly.');">
+          <form class="bg-white p-4 p-xl-5 rounded-4 shadow-sm border" onsubmit="event.preventDefault(); alert('Consultation Enquiry Submitted Successfully! Our engineering team will contact you shortly.');">
             <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Full Name</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Full Name *</label>
                 <input type="text" class="form-control form-control-custom" placeholder="John Doe" required>
               </div>
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Organization / City Council</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Organization / City</label>
                 <input type="text" class="form-control form-control-custom" placeholder="Green Metro Council" required>
               </div>
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Email Address</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Email Address *</label>
                 <input type="email" class="form-control form-control-custom" placeholder="john@example.gov" required>
               </div>
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Phone Number</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Phone Number *</label>
                 <input type="tel" class="form-control form-control-custom" placeholder="+1 (555) 000-0000" required>
               </div>
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Application Scale</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Application Scale *</label>
                 <select class="form-select form-control-custom" required>
                   <option selected value="">Select Scale...</option>
                   <option>Municipal / Urban Waste Plant (5-50+ Tons/day)</option>
@@ -174,8 +174,8 @@
                   <option>Residential / Community Housing</option>
                 </select>
               </div>
-              <div class="col-md-6">
-                <label class="form-label fw-medium small">Estimated Organic Waste (kg/day)</label>
+              <div class="col-12 col-xl-6">
+                <label class="form-label fw-medium small">Estimated Waste (kg/day)</label>
                 <input type="text" class="form-control form-control-custom" placeholder="e.g. 500 kg or 10 Tons">
               </div>
               <div class="col-12">
@@ -338,22 +338,6 @@
 
       <!-- Map Container -->
       <div class="map-container-wrapper">
-        <div class="map-overlay-card">
-          <div class="d-flex align-items-center gap-2 mb-2 text-success fw-medium small text-uppercase">
-            <i data-lucide="navigation" style="width: 16px; height: 16px;"></i>
-            <span id="location-type">Global Headquarters &amp; R&amp;D Center</span>
-          </div>
-          <h6 class="fw-bold mb-1" id="location-title">San Francisco Clean Tech Hub</h6>
-          <p class="small text-muted mb-3" id="location-address">100 Environmental Park Parkway, Suite 400<br>Clean Tech District, CA 94107, USA</p>
-          <div class="d-flex align-items-center justify-content-between pt-2 border-top">
-            <span class="badge bg-success-subtle text-success small" id="location-phone">+1 (800) 326-9278</span>
-            <a href="https://maps.google.com?q=37.788079,-122.398007" id="location-dir-link" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success rounded-pill px-3 py-1 small d-inline-flex align-items-center gap-1 text-decoration-none">
-              <span>Directions</span>
-              <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
-            </a>
-          </div>
-        </div>
-
         <iframe id="map-iframe" 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086487677464!2d-122.39800762343997!3d37.78807997198288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807ded40a1b5%3A0x6b8b0e8c8993f3c4!2sMarket%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map Location">
@@ -462,35 +446,14 @@
       btn.classList.add('btn-success', 'text-white', 'active');
 
       const iframe = document.getElementById('map-iframe');
-      const type = document.getElementById('location-type');
-      const title = document.getElementById('location-title');
-      const address = document.getElementById('location-address');
-      const phone = document.getElementById('location-phone');
-      const dirLink = document.getElementById('location-dir-link');
 
       if (loc === 'sf') {
         iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086487677464!2d-122.39800762343997!3d37.78807997198288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807ded40a1b5%3A0x6b8b0e8c8993f3c4!2sMarket%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
-        type.textContent = "Global Headquarters & R&D Center";
-        title.textContent = "San Francisco Clean Tech Hub";
-        address.innerHTML = "100 Environmental Park Parkway, Suite 400<br>Clean Tech District, CA 94107, USA";
-        phone.textContent = "+1 (800) 326-9278";
-        dirLink.href = "https://maps.google.com?q=37.788079,-122.398007";
       } else if (loc === 'frankfurt') {
         iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8457284610815!2d8.679723076899757!3d50.11092211181829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f47709615%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
-        type.textContent = "European Engineering Center";
-        title.textContent = "Frankfurt Eco-Industrial Complex";
-        address.innerHTML = "Grüneburgweg 45, Building B<br>60322 Frankfurt am Main, Germany";
-        phone.textContent = "+49 69 900 8820";
-        dirLink.href = "https://maps.google.com?q=50.110922,8.679723";
       } else if (loc === 'singapore') {
         iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7905872167307!2d103.85202637580665!3d1.2941549617300305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a1a3f65b87%3A0x6b976241b1d7d294!2sMarina%20Bay%20Financial%20Centre!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
-        type.textContent = "Asia-Pacific Regional Hub";
-        title.textContent = "Singapore Clean Energy Tower";
-        address.innerHTML = "10 Marina Boulevard, Level 28<br>Marina Bay Financial Centre, Singapore 018983";
-        phone.textContent = "+65 6709 1100";
-        dirLink.href = "https://maps.google.com?q=1.294155,103.852026";
       }
-      lucide.createIcons();
     }
   </script>
 

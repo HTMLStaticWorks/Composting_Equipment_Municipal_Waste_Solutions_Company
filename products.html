@@ -60,7 +60,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <h5 class="offcanvas-title fw-medium d-flex align-items-center gap-2" id="mobileMenuLabel"><img src="assets/images/logo.svg" alt="Logo" height="32" width="32" class="rounded"><span>Eco<span class="text-primary-custom">Cycle</span></span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -74,12 +74,12 @@
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
         <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
-              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
-            </button>
+          <div class="d-flex align-items-center justify-content-center gap-3">
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
           </div>
         </li>
@@ -140,22 +140,60 @@
   <section class="section-padding">
     <div class="container">
 
-      <!-- Top Search & Sort -->
-      <div
-        class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3 bg-white p-3 rounded shadow-sm border">
-        <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
-          <i data-lucide="search" class="text-muted"></i>
-          <input type="text" id="productSearch" class="form-control border-0 shadow-none"
-            placeholder="Search equipment, capacity, scale, model...">
+      <!-- Top Search & Sort Container -->
+      <div class="catalog-control-bar p-3 rounded-4 shadow-sm mb-3">
+        <div class="row g-2 align-items-center">
+          <!-- Search Bar -->
+          <div class="col-12 col-lg-6">
+            <div class="search-input-wrapper d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="height: 42px;">
+              <i data-lucide="search" class="text-muted flex-shrink-0" style="width: 16px; height: 16px;"></i>
+              <input type="text" id="productSearch" class="form-control border-0 p-0 shadow-none bg-transparent fs-7" placeholder="Search equipment, capacity, scale, model...">
+            </div>
+          </div>
+
+          <!-- Actions (Filter + Sort) -->
+          <div class="col-12 col-lg-6">
+            <div class="d-flex align-items-center gap-2 justify-content-between justify-content-lg-end">
+              <!-- Mobile/Tablet Filter Drawer Trigger Button -->
+              <button class="btn btn-outline-custom d-lg-none d-inline-flex align-items-center justify-content-center gap-2 py-2 px-3 fs-7 flex-fill flex-sm-grow-0 text-nowrap" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileFilterDrawer" aria-controls="mobileFilterDrawer" style="height: 42px; min-width: 130px;">
+                <i data-lucide="sliders-horizontal" style="width: 15px; height: 15px;"></i>
+                <span class="fw-medium">Filters</span>
+                <span class="badge bg-success rounded-pill px-2 py-1 ms-1 fs-8">Active</span>
+              </button>
+
+              <!-- Sort Dropdown -->
+              <div class="flex-fill flex-sm-grow-0" style="min-width: 150px;">
+                <select class="form-select form-control-custom fs-7 py-2 ps-3 pe-4 w-100 text-truncate" style="height: 42px;">
+                  <option value="featured">Sort: Featured</option>
+                  <option value="capacity">Capacity: High to Low</option>
+                  <option value="scale">Scale: Res to Mun</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-flex align-items-center gap-3 w-100 justify-content-md-end mobile-stack-btns">
-          <span class="text-muted small fw-medium d-none d-md-block">Sort By:</span>
-          <select class="form-select w-auto form-control-custom">
-            <option>Featured Systems</option>
-            <option>Capacity: High to Low</option>
-            <option>Scale: Residential to Municipal</option>
-          </select>
-        </div>
+      </div>
+
+      <!-- Mobile & Tablet Horizontal Quick-Filter Scrollable Pills -->
+      <div class="quick-filter-pills-bar d-flex align-items-center gap-2 overflow-x-auto pb-2 mb-4">
+        <button class="filter-pill-btn active flex-shrink-0" data-filter="all">
+          <i data-lucide="grid" class="me-1" style="width:16px; height:16px;"></i> All Systems
+        </button>
+        <button class="filter-pill-btn flex-shrink-0" data-filter="municipal">
+          <i data-lucide="landmark" class="me-1" style="width:16px; height:16px;"></i> Municipal (5-50T)
+        </button>
+        <button class="filter-pill-btn flex-shrink-0" data-filter="commercial">
+          <i data-lucide="building-2" class="me-1" style="width:16px; height:16px;"></i> Commercial (100kg-2T)
+        </button>
+        <button class="filter-pill-btn flex-shrink-0" data-filter="residential">
+          <i data-lucide="home" class="me-1" style="width:16px; height:16px;"></i> Residential (2-10kg)
+        </button>
+        <button class="filter-pill-btn flex-shrink-0" data-filter="biodrum">
+          <i data-lucide="rotate-cw" class="me-1" style="width:16px; height:16px;"></i> Bio-Drum Rotary
+        </button>
+        <button class="filter-pill-btn flex-shrink-0" data-filter="invessel">
+          <i data-lucide="zap" class="me-1" style="width:16px; height:16px;"></i> In-Vessel Digesters
+        </button>
       </div>
 
       <div class="row g-4">
@@ -417,6 +455,61 @@
   <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
     <i data-lucide="arrow-up"></i>
   </a>
+
+  <!-- Mobile & Tablet System Filter Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-bottom rounded-top-4 h-auto max-vh-85" tabindex="-1" id="mobileFilterDrawer" aria-labelledby="mobileFilterDrawerLabel">
+    <div class="offcanvas-header border-bottom py-3">
+      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2" id="mobileFilterDrawerLabel">
+        <i data-lucide="sliders-horizontal" class="text-success"></i> System Filters
+      </h5>
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-link text-success text-decoration-none p-0 small fw-medium clear-filters-btn">Reset All</button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body p-4">
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3 text-dark">Application Scale</h6>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileScaleMunicipal" checked>
+          <label class="form-check-label text-dark fw-medium" for="mobileScaleMunicipal">Municipal Scale (5-50T / day)</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileScaleCommercial" checked>
+          <label class="form-check-label text-dark fw-medium" for="mobileScaleCommercial">Commercial Scale (100-2000kg / day)</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileScaleResidential" checked>
+          <label class="form-check-label text-dark fw-medium" for="mobileScaleResidential">Residential Scale (2-10kg / day)</label>
+        </div>
+      </div>
+
+      <div class="mb-4 border-top pt-4">
+        <h6 class="fw-bold mb-3 text-dark">Technology Type</h6>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileTechBioDrum">
+          <label class="form-check-label text-dark fw-medium" for="mobileTechBioDrum">Continuous Bio-Drum Rotary</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileTechInVessel">
+          <label class="form-check-label text-dark fw-medium" for="mobileTechInVessel">In-Vessel Rapid Aerobic</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileTechShredder">
+          <label class="form-check-label text-dark fw-medium" for="mobileTechShredder">Organic Shredder &amp; Screen</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="mobileTechCountertop">
+          <label class="form-check-label text-dark fw-medium" for="mobileTechCountertop">Smart Electric Countertop</label>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer p-3 border-top bg-light">
+      <button class="btn btn-primary-custom w-100 py-3 justify-content-center" data-bs-dismiss="offcanvas">
+        Apply System Filters
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>

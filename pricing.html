@@ -58,7 +58,7 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-medium" id="mobileMenuLabel">Eco<span class="text-primary-custom">Cycle</span></h5>
+      <h5 class="offcanvas-title fw-medium d-flex align-items-center gap-2" id="mobileMenuLabel"><img src="assets/images/logo.svg" alt="Logo" height="32" width="32" class="rounded"><span>Eco<span class="text-primary-custom">Cycle</span></span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -72,12 +72,12 @@
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
         <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
-              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
-            </button>
+          <div class="d-flex align-items-center justify-content-center gap-3">
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
           </div>
         </li>
@@ -222,53 +222,61 @@
         <div class="col-lg-7">
           <div class="row g-3">
             <div class="col-sm-6">
-              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
-                <div class="d-flex align-items-center gap-3 mb-2">
-                  <div class="p-2 bg-success-subtle text-success rounded-circle">
-                    <i data-lucide="piggy-bank" style="width: 24px; height: 24px;"></i>
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="p-2 bg-success-subtle text-success rounded-circle">
+                      <i data-lucide="piggy-bank" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <span class="text-muted small fw-medium">Annual Hauling Savings</span>
                   </div>
-                  <span class="text-muted small fw-medium">Annual Hauling Savings</span>
+                  <h3 class="display-6 fw-bold text-success mb-1" id="resAnnualSavings">$16,425</h3>
                 </div>
-                <h3 class="display-6 fw-bold text-success mb-1" id="resAnnualSavings">$16,425</h3>
                 <p class="text-muted small mb-0">Direct cash retained from eliminated landfill tipping fees.</p>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
-                <div class="d-flex align-items-center gap-3 mb-2">
-                  <div class="p-2 bg-success-subtle text-success rounded-circle">
-                    <i data-lucide="sprout" style="width: 24px; height: 24px;"></i>
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="p-2 bg-success-subtle text-success rounded-circle">
+                      <i data-lucide="sprout" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <span class="text-muted small fw-medium">Bio-Fertilizer Value</span>
                   </div>
-                  <span class="text-muted small fw-medium">Bio-Fertilizer Value</span>
+                  <h3 class="display-6 fw-bold text-success mb-1" id="resFertilizerVal">$4,106</h3>
                 </div>
-                <h3 class="display-6 fw-bold text-success mb-1" id="resFertilizerVal">$4,106</h3>
                 <p class="text-muted small mb-0">Estimated value of generated nutrient soil amendment.</p>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
-                <div class="d-flex align-items-center gap-3 mb-2">
-                  <div class="p-2 bg-success-subtle text-success rounded-circle">
-                    <i data-lucide="leaf" style="width: 24px; height: 24px;"></i>
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="p-2 bg-success-subtle text-success rounded-circle">
+                      <i data-lucide="leaf" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <span class="text-muted small fw-medium">CO2e Methane Avoided</span>
                   </div>
-                  <span class="text-muted small fw-medium">CO2e Methane Avoided</span>
+                  <h3 class="display-6 fw-bold text-success mb-1" id="resCo2Avoided">219 Tons</h3>
                 </div>
-                <h3 class="display-6 fw-bold text-success mb-1" id="resCo2Avoided">219 Tons</h3>
                 <p class="text-muted small mb-0">Equivalent greenhouse gas reduction annually.</p>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition">
-                <div class="d-flex align-items-center gap-3 mb-2">
-                  <div class="p-2 bg-success-subtle text-success rounded-circle">
-                    <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+              <div class="p-4 rounded-4 bg-surface text-dark border border-secondary shadow-sm hover-glow transition h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="p-2 bg-success-subtle text-success rounded-circle">
+                      <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <span class="text-muted small fw-medium">Est. Equipment Payback</span>
                   </div>
-                  <span class="text-muted small fw-medium">Est. Equipment Payback</span>
+                  <h3 class="display-6 fw-bold text-success mb-1" id="resPayback">26 Months</h3>
                 </div>
-                <h3 class="display-6 fw-bold text-success mb-1" id="resPayback">26 Months</h3>
                 <p class="text-muted small mb-0">Typical timeline to full equipment capex recovery.</p>
               </div>
             </div>
@@ -277,7 +285,7 @@
           <!-- Total Benefit Banner -->
           <div class="mt-4 p-4 rounded-4 bg-primary-custom text-dark d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 shadow">
             <div>
-              <span class="badge bg-dark text-white px-2 py-1 mb-1">Combined Value</span>
+              <span class="badge px-3 py-1 mb-2 fw-medium" style="background-color: #0F172A !important; color: #FFFFFF !important;">Combined Value</span>
               <h4 class="fw-bold mb-0 text-dark">Total Net Benefit: <span id="resTotalBenefit">$20,531</span> / Year</h4>
             </div>
             <a href="quote.html?roi=calculated" class="btn btn-dark px-4 py-2 text-nowrap rounded-3 fw-medium">Lock In Savings Proposal</a>
