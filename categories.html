@@ -93,43 +93,117 @@
   </div>
 
   <!-- Hero Header -->
-  <section class="section-padding bg-dark text-white blueprint-bg position-relative overflow-hidden text-center">
+  <section class="section-padding blueprint-bg inner-page-hero has-hero-bg hero-bg-categories position-relative overflow-hidden text-center">
     <div class="container text-center position-relative z-1">
       <span class="badge bg-success rounded-pill px-3 py-2 mb-3 text-white fw-medium">Products Catalog</span>
-      <h1 class="display-4 fw-medium mb-4 text-white">Composting Systems <br><span class="text-primary-custom">by Scale</span></h1>
+      <h1 class="display-4 fw-medium mb-4">Composting Systems <br><span class="text-primary-custom">by Scale</span></h1>
       <p class="lead max-w-2xl mx-auto text-secondary-subtle">Explore our range of organic waste treatment equipment designed for Residential, Commercial, and Municipal applications.</p>
     </div>
   </section>
 
-  <!-- Scale Filter Cards -->
-  <section class="section-padding pb-0 pt-5">
+  <!-- Scale Filter Cards Section -->
+  <section class="pb-4 pt-4 position-relative">
     <div class="container">
-      <div class="row g-3 text-center justify-content-center">
-        <div class="col-md-4">
-          <div class="premium-card p-4 hover-glow border-success text-center">
-            <div class="bg-primary-custom text-white p-3 rounded-circle mx-auto mb-3" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center;">
-              <i data-lucide="home"></i>
+      <div class="row g-4 justify-content-center">
+        <!-- Residential Scale -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="scale-interactive-card overflow-hidden h-100 d-flex flex-column" onclick="filterProductCards('residential')">
+            <div class="scale-card-media position-relative overflow-hidden" style="height: 220px;">
+              <img src="assets/images/res_kitchen_smart_comp.jpg" alt="Residential Smart Kitchen Composter" class="w-100 h-100 object-fit-cover transition">
+              <div class="scale-media-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="scale-pill-badge px-3 py-1-5 rounded-pill fw-semibold">
+                  <i data-lucide="home" style="width: 15px; height: 15px;" class="me-1 text-success"></i> Residential Scale
+                </span>
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                <div class="scale-capacity-chip d-inline-flex align-items-center gap-2 px-3 py-1-5 rounded-pill">
+                  <span class="capacity-dot"></span>
+                  <span class="fw-semibold">Daily: 2kg – 10kg</span>
+                </div>
+              </div>
             </div>
-            <h5 class="fw-medium mb-1">Residential Scale</h5>
-            <p class="small text-muted mb-0">Home & Apartment Units (2kg - 10kg/day)</p>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="scale-card-title fw-bold mb-0">Residential Units</h3>
+                <span class="scale-cta-arrow">
+                  <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </span>
+              </div>
+              <p class="text-muted small mb-3">Countertop smart electric composters &amp; indoor odor-free digesters for modern homes and apartments.</p>
+              <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between">
+                <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 small">Plug &amp; Play</span>
+                <span class="small text-success fw-medium">View Models &rarr;</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="premium-card p-4 hover-glow text-center">
-            <div class="bg-primary-custom text-white p-3 rounded-circle mx-auto mb-3" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center;">
-              <i data-lucide="building-2"></i>
+
+        <!-- Commercial Scale -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="scale-interactive-card overflow-hidden h-100 d-flex flex-column" onclick="filterProductCards('commercial')">
+            <div class="scale-card-media position-relative overflow-hidden" style="height: 220px;">
+              <img src="assets/images/comm_stainless_digester.jpg" alt="Commercial Food Waste Digester Machine" class="w-100 h-100 object-fit-cover transition">
+              <div class="scale-media-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="scale-pill-badge px-3 py-1-5 rounded-pill fw-semibold">
+                  <i data-lucide="building-2" style="width: 15px; height: 15px;" class="me-1 text-success"></i> Commercial Scale
+                </span>
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                <div class="scale-capacity-chip d-inline-flex align-items-center gap-2 px-3 py-1-5 rounded-pill">
+                  <span class="capacity-dot"></span>
+                  <span class="fw-semibold">Daily: 100kg – 2,000kg</span>
+                </div>
+              </div>
             </div>
-            <h5 class="fw-medium mb-1">Commercial Scale</h5>
-            <p class="small text-muted mb-0">Hotels, Dining & Markets (100kg - 2 Tons/day)</p>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="scale-card-title fw-bold mb-0">Commercial Digesters</h3>
+                <span class="scale-cta-arrow">
+                  <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </span>
+              </div>
+              <p class="text-muted small mb-3">High-throughput aerobic digesters for hotels, university cafeterias, restaurants, and supermarkets.</p>
+              <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between">
+                <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 small">Continuous Feed</span>
+                <span class="small text-success fw-medium">View Models &rarr;</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="premium-card p-4 hover-glow text-center">
-            <div class="bg-primary-custom text-white p-3 rounded-circle mx-auto mb-3" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center;">
-              <i data-lucide="landmark"></i>
+
+        <!-- Municipal Scale -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="scale-interactive-card overflow-hidden h-100 d-flex flex-column" onclick="filterProductCards('municipal')">
+            <div class="scale-card-media position-relative overflow-hidden" style="height: 220px;">
+              <img src="assets/images/compost_hero.png" alt="Municipal Composting Eco-Park Facility" class="w-100 h-100 object-fit-cover transition">
+              <div class="scale-media-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              <div class="position-absolute top-0 start-0 m-3">
+                <span class="scale-pill-badge px-3 py-1-5 rounded-pill fw-semibold">
+                  <i data-lucide="landmark" style="width: 15px; height: 15px;" class="me-1 text-success"></i> Municipal Scale
+                </span>
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-3">
+                <div class="scale-capacity-chip d-inline-flex align-items-center gap-2 px-3 py-1-5 rounded-pill">
+                  <span class="capacity-dot"></span>
+                  <span class="fw-semibold">Daily: 5 – 50+ Tons</span>
+                </div>
+              </div>
             </div>
-            <h5 class="fw-medium mb-1">Municipal Scale</h5>
-            <p class="small text-muted mb-0">City & Landfill Plants (5 - 50+ Tons/day)</p>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="scale-card-title fw-bold mb-0">Municipal Plants</h3>
+                <span class="scale-cta-arrow">
+                  <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </span>
+              </div>
+              <p class="text-muted small mb-3">Continuous bio-drum rotary composting facilities and turnkey municipal organic waste recovery systems.</p>
+              <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between">
+                <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 small">Turnkey Plant</span>
+                <span class="small text-success fw-medium">View Models &rarr;</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
